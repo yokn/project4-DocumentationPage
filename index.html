@@ -6,7 +6,7 @@
 
         </title>
     </head>
-    <body style="background-color: lightgray;">
+    <body style="background-color: white">
         <main id="main-doc">
             <style>
                 @media (max-width: 849px){
@@ -24,12 +24,16 @@
                    display: flex;   
                    width: 16%;
                    height: 100%;
-                   background-color: #a8a2a2;
+                   background-color: lightgray;
                    flex-direction: column;
                    gap: 20px 20px;
                    align-content: center;
                    align-self: center;
                    text-align: center;
+               }
+               #navbar-header{
+                   font-size: 24px;
+                   margin-top:10px;
                }
                .nav-link{
                    flex-direction: column;
@@ -41,35 +45,54 @@
                    flex-direction: column;
                    font-size: 24px;
                    text-align: center;
-                   margin-left: 30%;
+                   margin-top: 2%;
+                   margin-left: 20%;
                    margin-right: 30%;
                }
                p {
-                   font-size: 14px;
+                   font-size: 16px;
+               }
+               code {
+                font-size: 16px;
+                background-color: #f7f7f7;
+                line-height: 2;
+                text-align: left;
+                margin: 2px;
+                padding: 10px;
+                border-radius: 5px;
+                word-wrap: normal;
+                word-break: normal;
+               }
+               ol {
+                font-size: 16px;
+                line-height: 2;
                }
             </style>
                 <nav id="navbar">
-                    <header>Topic</header>
-                    <a class="nav-link" href="#Header_1">Header 1</a>
+                    <header id="navbar-header">JS Documentation</header>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
                     <a class="nav-link" href="#Header_2">Header 2</a>
                     <a class="nav-link" href="#Header_3">Header 3</a>
-                    <a class="nav-link" href="#Header_4">Header 4</a>
+                    <a class="nav-link" href="#Hello_world">Hello world</a>
                     <a class="nav-link" href="#Header_5">Header 5</a>
                 </nav>
-                <section class="main-section" id="Header_1">
-                    <header>Header 1</header>
+                <section class="main-section" id="Introduction">
+                    <header>Introduction</header>
                     <p>
-                        Content 1
+                        JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
                     </p>
                     <p>
-                        Content 1.1
+                        JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
                     </p>
                     <code>
                         code 1
                     </code>
                     <ol>
                         <li>
-                            list 1
+                            Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation. 
+                        </li>
+                        <li>
+                            Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server. 
                         </li>
                     </ol>
                 </section>
@@ -107,17 +130,20 @@
                         </li>
                     </ol>
                 </section>
-                <section class="main-section" id="Header_4">
-                    <header>Header 4</header>
+                <section class="main-section" id="Hello_world">
+                    <header>Hello world</header>
                     <p>
-                        Content 4
+                        To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: 
                     </p>
-                    <p>
-                        Content 1.4
-                    </p>
+                    
                     <code>
-                        code 4
+                        function greetMe(yourName) { alert("Hello " + yourName); }
+                    <br>greetMe("World");
+
                     </code>
+                    <p>
+                        Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! 
+                    </p>
                     <ol>
                         <li>
                             list 4
